@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <h1>Form system</h1>
+    <form action="get">
+        <div>
+            <input type="text" name="account" >
+        </div>
+        <div>
+            <input type="password" name="pwd">
+        </div>
+        <div>
+              <input type="number" name="money">   
+        </div>
+        <div>
+            <input type="tel" name="phone">
+        </div>
+        <div>
+            <input type="color" name="bg-color">
+        </div>
+        <div>
+            <input type="date" name="schedule-date">
+        </div>
+        <div>
+            <input type="time" name="schedule-time">
+        </div>
+        <button type="submit">提交</button>
+    </form>
+
+    <form method="post" enctype="multipart/form-data" action="https://book.niceinfos.com/frontend/assets/html_file_upload/response.php"></form>
+        <div>
+            <input type="file" name="my-pic">
+        </div>
+
+        <form action="">
+        <h1>單選</h1>
+        <input type="radio" name="gender" value="male" id="C-1" /> 
+        <label for="C-1">男</label>
+        <input type="radio" name="gender" value="female" id="C-2" /> 
+        <label for="C-2">女</label>
+        <div><button>提交</button></div>
+
+        <h2>多選</h2>
+        <input type="checkbox" name="music[]" value="a1" /> A1
+        <input type="checkbox" name="music[]" value="a2" /> A2
+        <input type="checkbox" name="music[]" value="a3" /> A3
+
+        <div><button>提交</button></div>
+
+        <h1>下拉選單</h1>
+        <select name="county">
+            <option value="">選擇縣市</option>
+            <option value="TP">台北</option>
+            <option value="台中">台中</option>
+            <option>高雄</option>
+        </select>
+        <button>提交</button>
+
+        <h2>多選</h2>
+        <select name="county[]" multiple>
+            <option value="">選擇縣市</option>
+            <option value="TP">台北</option>
+            <option value="台中">台中</option>
+            <option>高雄</option>
+        </select>
+        <button>提交</button>
+
+        <h3>多行輸入</h3>
+        <textarea name="remark" cols="30" rows="10"></textarea>
+
+        <h4>label</h4>
+        <div>
+            <label for="f-fullname">全名</label>
+            <input type="text" name="fullname" id="f-fullname">
+        </div>
+        
+        <h5>運動</h5>
+
+        
+        
+
+
+        
+    </form>
+    
+</body>
+</html>
