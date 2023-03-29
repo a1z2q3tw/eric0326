@@ -1,0 +1,29 @@
+#btn-1 {
+    background-color: rgb(16, 131, 112);
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#btn-1:hover {
+    background-color: rgb(240, 106, 29);
+}
+
+
+#one {
+    color: crimson;
+    font-size: 150px;
+}
+
+.two {
+    color: darkmagenta;
+    font-size: 200px;
+}
+
+#three {
+    color: darkgreen;
+    font-size: 300px;
+}
