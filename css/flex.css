@@ -1,0 +1,48 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    background: yellow;
+    width: 700px;
+    height: 300px;
+    margin: auto;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background: black;
+    color: #fff;
+    border: 2px solid red ;
+    display: block;
+}
+
+.dir-r {
+    flex-direction: row-reverse;
+}
+
+.dir-a {
+    flex-direction: column;
+}
+
+.dir-b {
+    flex-direction: column-reverse;
+}
+
+.dir-c {
+    justify-content: start;
+}
+
+.dir-d {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dir-e {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
