@@ -130,3 +130,60 @@ a {
     width: 30px;
     height: 30px;
 }
+
+.table {
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table td,
+.table th {
+    border: 1px solid #dedede;
+    padding: 10px;
+}
+
+.table tbody tr {
+    background: #dedede;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: blue;
+}
+
+
+.table tbody tr:nth-child(even) {
+    background: red;
+}
+
+.menu li:nth-child(3) {
+    color: red;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+
+
+.group1 .switch + .item {
+    color: red;
+}
+
+.group2 .switch + .item {
+    color: red;
+}
+
+/* .group1 .switch ~ .item {
+    color: red;
+}
+.group2 .switch ~ .item {
+    color: red;
+} */

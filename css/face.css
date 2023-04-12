@@ -87,6 +87,9 @@
     position: absolute;
     right: -10px;
     top: -10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
     /* cursor: pointer; */
 }
 
@@ -94,4 +97,12 @@
 a {
     color: inherit;
     text-decoration: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+#ad-switch:checked + .ad-banner {
+    display: none;
 }
