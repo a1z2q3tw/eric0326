@@ -1,13 +1,11 @@
 {
-    
-        "liveSassCompile.settings.formats": [
-            {
-                "format": "expanded",
-                "extensionName": ".css",
-                "savePath": "/dist/css"
-            }
-        ],
-        "liveServer.settings.root": "/dist",
-        "liveServer.settings.CustomBrowser": "chrome"
-        
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/dist/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveServer.settings.root": "/dist"
 }

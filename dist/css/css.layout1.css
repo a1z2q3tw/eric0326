@@ -1,68 +1,81 @@
-*,*::after,*::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
+
 body {
-    background-color: burlywood;
+  background-color: #000;
 }
 
-
-.menu ul {
-    list-style-type: none;
-    display: flex;
-}
-
-.menu ul li {
-    text-align: center;
-    margin-right: 15px;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-}
-
-.menu ul li:last-child {
-    margin-right: 0;
-}
-
-.menu ul li .en {
-    text-transform: uppercase; 
-    font-size: 14px;
-    font-weight: 800;
-    font-family: 'Courier New', Courier, monospace;
-}
 .container {
-    max-width: 700px;
-    height: 100%;
-    position: relative; 
-    margin: auto;
+  max-width: 700px;
+  height: 100%;
+  position: relative;
+  margin: auto;
 }
 
-
-body {
-    font-size: 14px;
-    font-weight: 800;
-    font-family: 'Courier New', Courier, monospace;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+.header .header-content {
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.header .header-content .menu ul {
+  list-style-type: none;
+  display: flex;
+}
+.header .header-content .menu ul li {
+  text-align: center;
+  margin-right: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+}
+.header .header-content .menu ul li:hover {
+  color: rgb(47, 47, 248);
+}
+.header .header-content .menu ul li:last-child {
+  margin-right: 0;
+}
+.header .header-content .menu ul li .en {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.footer {
-    background: #fff;
-    height: 100px;
+.join-form {
+  height: 100vh;
+  background-color: aqua;
 }
-
-.footer-content {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
+.join-form .join-form-content {
+  background: rgb(255, 210, 210);
+  display: flex;
+  justify-content: space-between;
+}
+.join-form .join-form-content > div {
+  width: 50%;
 }
 
 .wrap {
-    height: 100vh;
-}
+  height: 100vh;
+  background: yellow;
+}/*# sourceMappingURL=css.layout1.css.map */
