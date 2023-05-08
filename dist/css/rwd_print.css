@@ -57,9 +57,8 @@ a {
 .func button:hover {
   background: #fda623;
 }
-
 @media print {
-  .func {
+  .func .func {
     display: none;
   }
 }/*# sourceMappingURL=rwd_print.css.map */
