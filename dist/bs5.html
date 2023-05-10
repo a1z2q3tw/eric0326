@@ -10,26 +10,42 @@
 </head>
 
 <body>
-    <!-- <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-danger">1</div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-danger">2</div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-danger">3</div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-danger">4</div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-danger">5</div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-danger">6</div>
-        </div>
-    </div> -->
+    <div class="container">
+
+        <h1>聯絡我們</h1>
+        <form action="">
+            <div class="mb-3">
+                <label for="contact-name" class="form-label">姓名</label>
+                <input class="form-control" type="text" id="contact-name" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="contact-phone" class="form-label">電話</label>
+                <input class="form-control" type="text" id="contact-phone" name="phone">
+            </div>
+            <div class="mb-3">
+                <label for="contact-email" class="form-label">信箱</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="contact-email" name="email">
+                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="contact-type" class="form-label">類型</label>
+                <select name="type" id="contact-type" class="form-control">
+                    <option value="">選擇類型</option>
+                    <option value="1">工程相關</option>
+                    <option value="2">買賣相關</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="contact-remark" class="form-label">留言</label>
+                <textarea name="remark" id="contact-remark" class="form-control"></textarea>
+            </div>
+            <div class="mb-3 text-end">
+                <button class="btn btn-primary">送出</button>
+            </div>
+        </form>
+    </div>
 
 
     <div class="container">
