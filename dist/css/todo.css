@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 [v-cloak] {
   display: none;
 }
