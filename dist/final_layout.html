@@ -15,18 +15,19 @@
 <body>
     <div class="header">
         <div class="container">
-            <div class="header-mobile-switch">
+            <input type="checkbox" id="mobile-checkbox">
+            <label class="header-mobile-switch" for="mobile-checkbox">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </label>
             <div class="header-logo">
                 <a href="final_layout.html">
                     <img src="images/final-layout/logo.png" alt="Logo">
                 </a>
             </div>
-            <div>
-                <ul class="header-menu">
+            <div class="header-menu">
+                <ul>
                     <li>
                         <a href="#">關於XT-GRIP</a>
                     </li>
@@ -49,7 +50,27 @@
             <div class="header-lang">EN</div>
         </div>
     </div>
-    <div class="page"></div>
+    <div class="slider-block" id="app-slider">
+        <div class="slider">
+            <ul class="slider-item">
+                <template v-for="(item, itemIndex) in items">
+                    <li :class="{active: currentIndex == itemIndex}">
+                        <div class="slider-bg" :style="{'background-image': `url(${item.bg})`}"></div>
+                        <div class="slider-content">
+                            <div class="slider-title">{{ item.title }}</div>
+                            <div class="slider-subtitle">{{ item.subtitle }}</div>
+                        </div>
+                    </li>
+                </template>
+
+            </ul>
+            <div class="slider-menu">
+                <template v-for="(item, itemIndex) in items">
+                    <div :class="{active: currentIndex == itemIndex}" @click="setIndex(itemIndex)">{{ itemIndex }}</div>
+                </template>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             <div class="tixteel">
@@ -76,5 +97,7 @@
         </div>
     </div>
 </body>
+<script src="js/vue3.js"></script>
+<script src="js/final_layout.js"></script>
 
 </html>
