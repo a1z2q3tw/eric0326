@@ -71,6 +71,24 @@
             </div>
         </div>
     </div>
+    <div>
+        <div class="patent-design" id="patent-design">
+            <div class="design-wrap" ref="wrap">
+                <div class="container">
+                    <div class="design-content">
+                        <div class="design-title">專利結構設計</div>
+                        <div class="design-text">卡扣設計，讓您輕鬆替換重量，且安全不怕摔</div>
+                        <div>
+                            <button class="button" @click="doToggle">瞭解詳情</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="design-popup" ref="popup" @click="doToggle">
+            POPUP
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             <div class="tixteel">
@@ -97,6 +115,8 @@
         </div>
     </div>
 </body>
+
+<script src="js/gsap.min.js"></script>
 <script src="js/vue3.js"></script>
 <script src="js/final_layout.js"></script>
 
