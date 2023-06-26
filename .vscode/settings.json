@@ -8,7 +8,5 @@
         }
     ],
     "liveServer.settings.root": "/dist",
-
     "editor.formatOnSave": true
-
 }
