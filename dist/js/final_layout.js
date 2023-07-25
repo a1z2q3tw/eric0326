@@ -8,13 +8,13 @@ Vue.createApp({
             ],
             currentIndex: 0,
             timer: '',
-            loopSecoun: 5
+            loopSecond: 5
         }
     },
     methods: {
         setIndex(index) {
             this.currentIndex = index;
-            this.doop();
+            this.doLop();
         },
         doLoop() {
             clearInterval(this.timer);
