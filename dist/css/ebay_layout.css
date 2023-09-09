@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Martel Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header div {
+    font-size: .0.75rem;
+}
+
+header .header-container {
+    max-width: 1500px;
+    height: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0 32px;
+
+    column-gap: 200px;
+}
+
+header .l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 400px;
+}
+
+header .r-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   width: 400px;
+    
+}
+
+header .l-header>a, header .r-header>a .drop-down-menu {
+    cursor: pointer;
+    color: black;
+
+    display: flex;
+}
+
+header .sign_or_reg {
+    color: #0654ba;
+}
+
+header .bell, header .cart {
+    font-size: 22px;
+    color: black;
+}
+
+@media  screen and (max-width: 950px) {
+    .r-header a:first-child {
+        display: none;
+    }
+
+    header .r-header {
+        width: 220px;
+        flex-shrink: 0;
+    } 
+}
+
+@media  screen and (max-width: 950px) {
+    .r-header div:first-of-type {
+        display: none;
+    }
+}
+
+@media  screen and (max-width:845px) {
+    .l-header>div>span:nth-last-of-type(1) {
+        display: none;
+    }
+    .l-header>div>a:nth-last-of-type(1) {
+        display: none;
+    }
+    header .l-header {
+        width: 270px;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    header .l-header>a {
+        display: none;
+    }
+
+    header .l-header {
+        width: 110px;
+        flex-shrink: 0;
+    }
+}
