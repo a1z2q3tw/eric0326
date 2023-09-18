@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -16,7 +18,7 @@ header div {
 }
 
 header .header-container {
-    max-width: 1500px;
+    max-width: 1312px;
     height: 28px;
 
     display: flex;
@@ -42,11 +44,12 @@ header .r-header {
     justify-content: space-between;
     align-items: center;
 
-   width: 400px;
-    
+    width: 400px;
+
 }
 
-header .l-header>a, header .r-header>a .drop-down-menu {
+header .l-header>a,
+header .r-header>a .drop-down-menu {
     cursor: pointer;
     color: black;
 
@@ -57,12 +60,13 @@ header .sign_or_reg {
     color: #0654ba;
 }
 
-header .bell, header .cart {
+header .bell,
+header .cart {
     font-size: 22px;
     color: black;
 }
 
-@media  screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
     .r-header a:first-child {
         display: none;
     }
@@ -70,22 +74,24 @@ header .bell, header .cart {
     header .r-header {
         width: 220px;
         flex-shrink: 0;
-    } 
+    }
 }
 
-@media  screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
     .r-header div:first-of-type {
         display: none;
     }
 }
 
-@media  screen and (max-width:845px) {
+@media screen and (max-width:845px) {
     .l-header>div>span:nth-last-of-type(1) {
         display: none;
     }
+
     .l-header>div>a:nth-last-of-type(1) {
         display: none;
     }
+
     header .l-header {
         width: 270px;
         flex-shrink: 0;
@@ -101,4 +107,62 @@ header .bell, header .cart {
         width: 110px;
         flex-shrink: 0;
     }
+}
+
+section.main-body,
+footer {
+    border: 1px solid #ddd;
+}
+
+nav.search-bar .search-bar {
+    height: 60px;
+    max-width: 1312px;
+
+    margin: 0 auto;
+    padding: 0.1rem 1.5rem;
+}
+
+nav.search-bar .nav-ul {
+    display: flex;
+    align-items: center;
+
+    column-gap: 0.5rem;
+    padding: 0 5px;
+}
+
+nav.search-bar .ebay-logo img {
+    width: 120px;
+}
+
+nav.search-bar .shop-category {
+    width: 80px;
+    height: 60px;
+    line-height: 1rem;
+
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav.search-bar .category-text {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+
+nav.search-bar .category-text {
+    color: #0654ba;
+
+}
+
+nav.search-bar .search-form {
+    align-items: center;
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: minmax(270px, auto) 170px 170px 70px;
+
+}
+
+input {
+    fz
 }
