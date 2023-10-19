@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 500px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.rotate {
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  background-color: red;
+  color: yellow;
+  transform: rotate(135deg);
+}
+
+.sp {
+  display: flex;
+  margin-top: 150px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  margin-left: 100px;
+}
+.sp > span {
+  transform: rotate(315deg);
+  font-size: 30px;
+}
+
+.product {
+  width: 300px;
+  height: 500px;
+  background-color: #DEDEDE;
+  margin-top: 100px;
+  display: block;
+  padding: 10px;
+}
+.product .product-img {
+  width: 100%;
+  height: 200px;
+  background: rgb(45, 131, 243);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.product .product-img > div:first-child {
+  transition-duration: 1s;
+  font-size: 30px;
+}
+.product .product-img:hover > div:first-child {
+  transform: scale(2);
+  color: red;
+  transition: all 1s;
+}
+.product .product-discount {
+  position: absolute;
+  top: 36px;
+  right: -95px;
+  color: red;
+  background: rgb(211, 106, 106);
+  width: 100%;
+  text-align: center;
+  transform: rotate(45DEG);
+  font-size: 18px;
+}
+
+.bg-change {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 50px auto;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background;
+  transition-duration: 3s;
+}
+.bg-change:hover {
+  background: red;
+  color: black;
+  width: 300px;
+  height: 300px;
+}/*# sourceMappingURL=transform.css.map */

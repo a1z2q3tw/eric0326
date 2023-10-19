@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../src/scss/_reset.scss","practice.css"],"names":[],"mappings":"AAAA;;;EAGI,SAAA;EACA,UAAA;EACA,sBAAA;EACA,gBAAA;ACCJ;;ADEA;EACI,cAAA;EACA,qBAAA;ACCJ;;ADEA;EACI,qBAAA;ACCJ","file":"practice.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/scss/_reset.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;EAGI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI","file":"practice.css"}

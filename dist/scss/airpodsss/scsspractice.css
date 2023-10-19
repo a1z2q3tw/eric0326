@@ -1,0 +1,38 @@
+.section-2, .container .section-4 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+}
+.section-2 button, .container .section-4 button {
+  background-color: red;
+}
+
+.container .section-1 {
+  width: 100px;
+  height: 200px;
+  background-color: gold;
+}
+.container .section-1 button {
+  background-color: red;
+}
+.container .section-2, .container .section-4 {
+  width: 300px;
+  height: 200px;
+  background-color: gold;
+}
+.container .section-3 {
+  width: 100px;
+  height: 200px;
+  background-color: gold;
+}
+.container .section-3 button {
+  background-color: red;
+}
+.container .section-4 p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.container .section-4 {
+  width: 400px;
+  background-color: lightblue;
+}/*# sourceMappingURL=scsspractice.css.map */

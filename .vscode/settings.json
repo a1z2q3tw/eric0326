@@ -8,5 +8,6 @@
         }
     ],
     "liveServer.settings.root": "/dist",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "liveServer.settings.port": 5500
 }
